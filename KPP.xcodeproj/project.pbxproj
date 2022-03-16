@@ -11,11 +11,104 @@
 		FC22AD5427C7D71B00EE8F0D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22AD5327C7D71B00EE8F0D /* SceneDelegate.swift */; };
 		FC22AD5627C7D71B00EE8F0D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22AD5527C7D71B00EE8F0D /* ViewController.swift */; };
 		FC22AD5927C7D71B00EE8F0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC22AD5727C7D71B00EE8F0D /* Main.storyboard */; };
-		FC22AD5B27C7D71D00EE8F0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC22AD5A27C7D71D00EE8F0D /* Assets.xcassets */; };
 		FC22AD5E27C7D71D00EE8F0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC22AD5C27C7D71D00EE8F0D /* LaunchScreen.storyboard */; };
 		FC22AD6927C7D71D00EE8F0D /* KPPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22AD6827C7D71D00EE8F0D /* KPPTests.swift */; };
 		FC22AD7327C7D71D00EE8F0D /* KPPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22AD7227C7D71D00EE8F0D /* KPPUITests.swift */; };
 		FC22AD7527C7D71D00EE8F0D /* KPPUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22AD7427C7D71D00EE8F0D /* KPPUITestsLaunchTests.swift */; };
+		FC22AD8627C7DEAE00EE8F0D /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22AD8527C7DEAE00EE8F0D /* HomeVC.swift */; };
+		FC22AD8927C7E61200EE8F0D /* ContainerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22AD8827C7E61200EE8F0D /* ContainerVC.swift */; };
+		FC22AD8C27C7E70500EE8F0D /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22AD8B27C7E70500EE8F0D /* MenuVC.swift */; };
+		FC22AD8F27C7F98200EE8F0D /* InfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22AD8E27C7F98200EE8F0D /* InfoVC.swift */; };
+		FC22AD9227C8B98F00EE8F0D /* WorkshopVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22AD9127C8B98F00EE8F0D /* WorkshopVC.swift */; };
+		FC22AD9527C8BD8600EE8F0D /* GentelmenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22AD9427C8BD8600EE8F0D /* GentelmenVC.swift */; };
+		FC22AD9827C8BE5700EE8F0D /* ChestAvtoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22AD9727C8BE5700EE8F0D /* ChestAvtoVC.swift */; };
+		FC22ADAB27D90A2B00EE8F0D /* ofont.ru_Marutya.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC22ADAA27D90A2B00EE8F0D /* ofont.ru_Marutya.ttf */; };
+		FC22ADAC27D90A2B00EE8F0D /* ofont.ru_Marutya.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC22ADAA27D90A2B00EE8F0D /* ofont.ru_Marutya.ttf */; };
+		FC22ADAD27D90A2B00EE8F0D /* ofont.ru_Marutya.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC22ADAA27D90A2B00EE8F0D /* ofont.ru_Marutya.ttf */; };
+		FC22ADB227D912F700EE8F0D /* HomeTableLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22ADB127D912F700EE8F0D /* HomeTableLayout.swift */; };
+		FC22ADB327D912F700EE8F0D /* HomeTableLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22ADB127D912F700EE8F0D /* HomeTableLayout.swift */; };
+		FC22ADB427D912F700EE8F0D /* HomeTableLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22ADB127D912F700EE8F0D /* HomeTableLayout.swift */; };
+		FC22ADB727D9142E00EE8F0D /* HumanCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22ADB627D9142E00EE8F0D /* HumanCell.swift */; };
+		FC22ADB827D9142E00EE8F0D /* HumanCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22ADB627D9142E00EE8F0D /* HumanCell.swift */; };
+		FC22ADB927D9142E00EE8F0D /* HumanCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22ADB627D9142E00EE8F0D /* HumanCell.swift */; };
+		FC22ADBB27D9160C00EE8F0D /* Human.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22ADBA27D9160C00EE8F0D /* Human.swift */; };
+		FC22ADBC27D9160C00EE8F0D /* Human.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22ADBA27D9160C00EE8F0D /* Human.swift */; };
+		FC22ADBD27D9160C00EE8F0D /* Human.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22ADBA27D9160C00EE8F0D /* Human.swift */; };
+		FC22ADBF27D916FE00EE8F0D /* HumanManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22ADBE27D916FE00EE8F0D /* HumanManager.swift */; };
+		FC22ADC027D916FE00EE8F0D /* HumanManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22ADBE27D916FE00EE8F0D /* HumanManager.swift */; };
+		FC22ADC127D916FE00EE8F0D /* HumanManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22ADBE27D916FE00EE8F0D /* HumanManager.swift */; };
+		FC22ADC327D91A1D00EE8F0D /* HumanModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22ADC227D91A1D00EE8F0D /* HumanModel.swift */; };
+		FC22ADC427D91A1D00EE8F0D /* HumanModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22ADC227D91A1D00EE8F0D /* HumanModel.swift */; };
+		FC22ADC527D91A1D00EE8F0D /* HumanModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22ADC227D91A1D00EE8F0D /* HumanModel.swift */; };
+		FC22ADC827D9FF5000EE8F0D /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22ADC727D9FF5000EE8F0D /* PhotoCell.swift */; };
+		FC22ADC927D9FF5100EE8F0D /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22ADC727D9FF5000EE8F0D /* PhotoCell.swift */; };
+		FC22ADCA27D9FF5100EE8F0D /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22ADC727D9FF5000EE8F0D /* PhotoCell.swift */; };
+		FC22ADCD27DA123300EE8F0D /* CustomNav.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22ADCC27DA123300EE8F0D /* CustomNav.swift */; };
+		FC22ADCE27DA123300EE8F0D /* CustomNav.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22ADCC27DA123300EE8F0D /* CustomNav.swift */; };
+		FC22ADCF27DA123300EE8F0D /* CustomNav.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22ADCC27DA123300EE8F0D /* CustomNav.swift */; };
+		FC22ADD227DA552800EE8F0D /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22ADD127DA552800EE8F0D /* Photo.swift */; };
+		FC22ADD327DA552800EE8F0D /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22ADD127DA552800EE8F0D /* Photo.swift */; };
+		FC22ADD427DA552800EE8F0D /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22ADD127DA552800EE8F0D /* Photo.swift */; };
+		FC22ADD627DA55CF00EE8F0D /* PhotoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22ADD527DA55CF00EE8F0D /* PhotoManager.swift */; };
+		FC22ADD727DA55CF00EE8F0D /* PhotoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22ADD527DA55CF00EE8F0D /* PhotoManager.swift */; };
+		FC22ADD827DA55CF00EE8F0D /* PhotoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22ADD527DA55CF00EE8F0D /* PhotoManager.swift */; };
+		FC22ADDA27DA565000EE8F0D /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22ADD927DA565000EE8F0D /* PhotoModel.swift */; };
+		FC22ADDB27DA565000EE8F0D /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22ADD927DA565000EE8F0D /* PhotoModel.swift */; };
+		FC22ADDC27DA565000EE8F0D /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22ADD927DA565000EE8F0D /* PhotoModel.swift */; };
+		FC22ADDE27DA5AF400EE8F0D /* PhotoTableLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22ADDD27DA5AF400EE8F0D /* PhotoTableLayout.swift */; };
+		FC22ADDF27DA5AF400EE8F0D /* PhotoTableLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22ADDD27DA5AF400EE8F0D /* PhotoTableLayout.swift */; };
+		FC22ADE027DA5AF400EE8F0D /* PhotoTableLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22ADDD27DA5AF400EE8F0D /* PhotoTableLayout.swift */; };
+		FC22ADE327DA602400EE8F0D /* BuyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22ADE227DA602400EE8F0D /* BuyVC.swift */; };
+		FC22ADE427DA602400EE8F0D /* BuyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22ADE227DA602400EE8F0D /* BuyVC.swift */; };
+		FC22ADE527DA602400EE8F0D /* BuyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22ADE227DA602400EE8F0D /* BuyVC.swift */; };
+		FC22ADE727DA6D0B00EE8F0D /* SellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22ADE627DA6D0B00EE8F0D /* SellVC.swift */; };
+		FC22ADE827DA6D0B00EE8F0D /* SellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22ADE627DA6D0B00EE8F0D /* SellVC.swift */; };
+		FC22ADE927DA6D0B00EE8F0D /* SellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22ADE627DA6D0B00EE8F0D /* SellVC.swift */; };
+		FC22ADEB27DA6D4000EE8F0D /* CommissionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22ADEA27DA6D4000EE8F0D /* CommissionVC.swift */; };
+		FC22ADEC27DA6D4000EE8F0D /* CommissionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22ADEA27DA6D4000EE8F0D /* CommissionVC.swift */; };
+		FC22ADED27DA6D4000EE8F0D /* CommissionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22ADEA27DA6D4000EE8F0D /* CommissionVC.swift */; };
+		FC22ADF027DA6E5C00EE8F0D /* GentlmenCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22ADEF27DA6E5C00EE8F0D /* GentlmenCell.swift */; };
+		FC22ADF127DA6E5C00EE8F0D /* GentlmenCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22ADEF27DA6E5C00EE8F0D /* GentlmenCell.swift */; };
+		FC22ADF227DA6E5C00EE8F0D /* GentlmenCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22ADEF27DA6E5C00EE8F0D /* GentlmenCell.swift */; };
+		FC22ADF427DA6E7100EE8F0D /* Gentlmen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22ADF327DA6E7100EE8F0D /* Gentlmen.swift */; };
+		FC22ADF527DA6E7100EE8F0D /* Gentlmen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22ADF327DA6E7100EE8F0D /* Gentlmen.swift */; };
+		FC22ADF627DA6E7100EE8F0D /* Gentlmen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22ADF327DA6E7100EE8F0D /* Gentlmen.swift */; };
+		FC22ADF827DA6E7D00EE8F0D /* GentlmenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22ADF727DA6E7D00EE8F0D /* GentlmenManager.swift */; };
+		FC22ADF927DA6E7D00EE8F0D /* GentlmenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22ADF727DA6E7D00EE8F0D /* GentlmenManager.swift */; };
+		FC22ADFA27DA6E7D00EE8F0D /* GentlmenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22ADF727DA6E7D00EE8F0D /* GentlmenManager.swift */; };
+		FC22ADFC27DA6E8700EE8F0D /* GentlmenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22ADFB27DA6E8700EE8F0D /* GentlmenModel.swift */; };
+		FC22ADFD27DA6E8700EE8F0D /* GentlmenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22ADFB27DA6E8700EE8F0D /* GentlmenModel.swift */; };
+		FC22ADFE27DA6E8700EE8F0D /* GentlmenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22ADFB27DA6E8700EE8F0D /* GentlmenModel.swift */; };
+		FC22AE0127DA74B000EE8F0D /* Workshop.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22AE0027DA74B000EE8F0D /* Workshop.swift */; };
+		FC22AE0227DA74B000EE8F0D /* Workshop.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22AE0027DA74B000EE8F0D /* Workshop.swift */; };
+		FC22AE0327DA74B000EE8F0D /* Workshop.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22AE0027DA74B000EE8F0D /* Workshop.swift */; };
+		FC22AE0527DA74BA00EE8F0D /* WorkshopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22AE0427DA74BA00EE8F0D /* WorkshopCell.swift */; };
+		FC22AE0627DA74BA00EE8F0D /* WorkshopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22AE0427DA74BA00EE8F0D /* WorkshopCell.swift */; };
+		FC22AE0727DA74BA00EE8F0D /* WorkshopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22AE0427DA74BA00EE8F0D /* WorkshopCell.swift */; };
+		FC22AE0927DA74C400EE8F0D /* WorkshopManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22AE0827DA74C400EE8F0D /* WorkshopManager.swift */; };
+		FC22AE0A27DA74C400EE8F0D /* WorkshopManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22AE0827DA74C400EE8F0D /* WorkshopManager.swift */; };
+		FC22AE0B27DA74C400EE8F0D /* WorkshopManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22AE0827DA74C400EE8F0D /* WorkshopManager.swift */; };
+		FC22AE0D27DA74CE00EE8F0D /* WorkshopModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22AE0C27DA74CE00EE8F0D /* WorkshopModel.swift */; };
+		FC22AE0E27DA74CE00EE8F0D /* WorkshopModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22AE0C27DA74CE00EE8F0D /* WorkshopModel.swift */; };
+		FC22AE0F27DA74CE00EE8F0D /* WorkshopModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22AE0C27DA74CE00EE8F0D /* WorkshopModel.swift */; };
+		FC22AE1227DA776B00EE8F0D /* ServiceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22AE1127DA776B00EE8F0D /* ServiceVC.swift */; };
+		FC22AE1327DA776B00EE8F0D /* ServiceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22AE1127DA776B00EE8F0D /* ServiceVC.swift */; };
+		FC22AE1427DA776B00EE8F0D /* ServiceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22AE1127DA776B00EE8F0D /* ServiceVC.swift */; };
+		FC22AE1627DA777B00EE8F0D /* DetailingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22AE1527DA777B00EE8F0D /* DetailingVC.swift */; };
+		FC22AE1727DA777B00EE8F0D /* DetailingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22AE1527DA777B00EE8F0D /* DetailingVC.swift */; };
+		FC22AE1827DA777B00EE8F0D /* DetailingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22AE1527DA777B00EE8F0D /* DetailingVC.swift */; };
+		FC22AE1A27DA78C800EE8F0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC22AE1927DA78C800EE8F0D /* Assets.xcassets */; };
+		FC22AE1B27DA78C800EE8F0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC22AE1927DA78C800EE8F0D /* Assets.xcassets */; };
+		FC22AE1C27DA78C800EE8F0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC22AE1927DA78C800EE8F0D /* Assets.xcassets */; };
+		FC22AE1E27DB351D00EE8F0D /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22AE1D27DB351D00EE8F0D /* CustomTextField.swift */; };
+		FC22AE1F27DB351D00EE8F0D /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22AE1D27DB351D00EE8F0D /* CustomTextField.swift */; };
+		FC22AE2027DB351D00EE8F0D /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22AE1D27DB351D00EE8F0D /* CustomTextField.swift */; };
+		FC22AE2227DB593F00EE8F0D /* CustomSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22AE2127DB593F00EE8F0D /* CustomSegmentedControl.swift */; };
+		FC22AE2327DB593F00EE8F0D /* CustomSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22AE2127DB593F00EE8F0D /* CustomSegmentedControl.swift */; };
+		FC22AE2427DB593F00EE8F0D /* CustomSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22AE2127DB593F00EE8F0D /* CustomSegmentedControl.swift */; };
+		FC22AE2727DB8EC900EE8F0D /* PhotoCarsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22AE2627DB8EC900EE8F0D /* PhotoCarsCell.swift */; };
+		FC22AE2827DB8EC900EE8F0D /* PhotoCarsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22AE2627DB8EC900EE8F0D /* PhotoCarsCell.swift */; };
+		FC22AE2927DB8EC900EE8F0D /* PhotoCarsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22AE2627DB8EC900EE8F0D /* PhotoCarsCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +134,6 @@
 		FC22AD5327C7D71B00EE8F0D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FC22AD5527C7D71B00EE8F0D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FC22AD5827C7D71B00EE8F0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FC22AD5A27C7D71D00EE8F0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC22AD5D27C7D71D00EE8F0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC22AD5F27C7D71D00EE8F0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC22AD6427C7D71D00EE8F0D /* KPPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KPPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +141,42 @@
 		FC22AD6E27C7D71D00EE8F0D /* KPPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KPPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC22AD7227C7D71D00EE8F0D /* KPPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KPPUITests.swift; sourceTree = "<group>"; };
 		FC22AD7427C7D71D00EE8F0D /* KPPUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KPPUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FC22AD8527C7DEAE00EE8F0D /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		FC22AD8827C7E61200EE8F0D /* ContainerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerVC.swift; sourceTree = "<group>"; };
+		FC22AD8B27C7E70500EE8F0D /* MenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
+		FC22AD8E27C7F98200EE8F0D /* InfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoVC.swift; sourceTree = "<group>"; };
+		FC22AD9127C8B98F00EE8F0D /* WorkshopVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkshopVC.swift; sourceTree = "<group>"; };
+		FC22AD9427C8BD8600EE8F0D /* GentelmenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GentelmenVC.swift; sourceTree = "<group>"; };
+		FC22AD9727C8BE5700EE8F0D /* ChestAvtoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChestAvtoVC.swift; sourceTree = "<group>"; };
+		FC22ADAA27D90A2B00EE8F0D /* ofont.ru_Marutya.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ofont.ru_Marutya.ttf; sourceTree = "<group>"; };
+		FC22ADB127D912F700EE8F0D /* HomeTableLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableLayout.swift; sourceTree = "<group>"; };
+		FC22ADB627D9142E00EE8F0D /* HumanCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanCell.swift; sourceTree = "<group>"; };
+		FC22ADBA27D9160C00EE8F0D /* Human.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Human.swift; sourceTree = "<group>"; };
+		FC22ADBE27D916FE00EE8F0D /* HumanManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanManager.swift; sourceTree = "<group>"; };
+		FC22ADC227D91A1D00EE8F0D /* HumanModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanModel.swift; sourceTree = "<group>"; };
+		FC22ADC727D9FF5000EE8F0D /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		FC22ADCC27DA123300EE8F0D /* CustomNav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNav.swift; sourceTree = "<group>"; };
+		FC22ADD127DA552800EE8F0D /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		FC22ADD527DA55CF00EE8F0D /* PhotoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoManager.swift; sourceTree = "<group>"; };
+		FC22ADD927DA565000EE8F0D /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
+		FC22ADDD27DA5AF400EE8F0D /* PhotoTableLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTableLayout.swift; sourceTree = "<group>"; };
+		FC22ADE227DA602400EE8F0D /* BuyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyVC.swift; sourceTree = "<group>"; };
+		FC22ADE627DA6D0B00EE8F0D /* SellVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellVC.swift; sourceTree = "<group>"; };
+		FC22ADEA27DA6D4000EE8F0D /* CommissionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommissionVC.swift; sourceTree = "<group>"; };
+		FC22ADEF27DA6E5C00EE8F0D /* GentlmenCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GentlmenCell.swift; sourceTree = "<group>"; };
+		FC22ADF327DA6E7100EE8F0D /* Gentlmen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gentlmen.swift; sourceTree = "<group>"; };
+		FC22ADF727DA6E7D00EE8F0D /* GentlmenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GentlmenManager.swift; sourceTree = "<group>"; };
+		FC22ADFB27DA6E8700EE8F0D /* GentlmenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GentlmenModel.swift; sourceTree = "<group>"; };
+		FC22AE0027DA74B000EE8F0D /* Workshop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workshop.swift; sourceTree = "<group>"; };
+		FC22AE0427DA74BA00EE8F0D /* WorkshopCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkshopCell.swift; sourceTree = "<group>"; };
+		FC22AE0827DA74C400EE8F0D /* WorkshopManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkshopManager.swift; sourceTree = "<group>"; };
+		FC22AE0C27DA74CE00EE8F0D /* WorkshopModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkshopModel.swift; sourceTree = "<group>"; };
+		FC22AE1127DA776B00EE8F0D /* ServiceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceVC.swift; sourceTree = "<group>"; };
+		FC22AE1527DA777B00EE8F0D /* DetailingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailingVC.swift; sourceTree = "<group>"; };
+		FC22AE1927DA78C800EE8F0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FC22AE1D27DB351D00EE8F0D /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		FC22AE2127DB593F00EE8F0D /* CustomSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegmentedControl.swift; sourceTree = "<group>"; };
+		FC22AE2627DB8EC900EE8F0D /* PhotoCarsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCarsCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +227,22 @@
 		FC22AD5027C7D71B00EE8F0D /* KPP */ = {
 			isa = PBXGroup;
 			children = (
+				FC22ADE127DA5FF200EE8F0D /* Buy */,
+				FC22ADCB27DA121900EE8F0D /* Custom */,
+				FC22AD9927D904AA00EE8F0D /* Fonts */,
+				FC22AD9627C8BE3F00EE8F0D /* ChestAvto */,
+				FC22AD9327C8BD5E00EE8F0D /* Gentlmen */,
+				FC22AD8427C7DE9700EE8F0D /* Home */,
+				FC22AD9027C8B94E00EE8F0D /* Workshop */,
+				FC22AD8D27C7F96E00EE8F0D /* Info */,
+				FC22AD8A27C7E6EF00EE8F0D /* Menu */,
+				FC22AD8727C7E5F300EE8F0D /* Container */,
+				FC22AD8127C7D73D00EE8F0D /* Loading_Screen */,
 				FC22AD5127C7D71B00EE8F0D /* AppDelegate.swift */,
 				FC22AD5327C7D71B00EE8F0D /* SceneDelegate.swift */,
-				FC22AD5527C7D71B00EE8F0D /* ViewController.swift */,
 				FC22AD5727C7D71B00EE8F0D /* Main.storyboard */,
-				FC22AD5A27C7D71D00EE8F0D /* Assets.xcassets */,
-				FC22AD5C27C7D71D00EE8F0D /* LaunchScreen.storyboard */,
 				FC22AD5F27C7D71D00EE8F0D /* Info.plist */,
+				FC22AE1927DA78C800EE8F0D /* Assets.xcassets */,
 			);
 			path = KPP;
 			sourceTree = "<group>";
@@ -125,6 +262,168 @@
 				FC22AD7427C7D71D00EE8F0D /* KPPUITestsLaunchTests.swift */,
 			);
 			path = KPPUITests;
+			sourceTree = "<group>";
+		};
+		FC22AD8127C7D73D00EE8F0D /* Loading_Screen */ = {
+			isa = PBXGroup;
+			children = (
+				FC22AD5C27C7D71D00EE8F0D /* LaunchScreen.storyboard */,
+				FC22AD5527C7D71B00EE8F0D /* ViewController.swift */,
+			);
+			path = Loading_Screen;
+			sourceTree = "<group>";
+		};
+		FC22AD8427C7DE9700EE8F0D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				FC22ADB527D9142000EE8F0D /* Cell */,
+				FC22AD8527C7DEAE00EE8F0D /* HomeVC.swift */,
+				FC22ADB127D912F700EE8F0D /* HomeTableLayout.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		FC22AD8727C7E5F300EE8F0D /* Container */ = {
+			isa = PBXGroup;
+			children = (
+				FC22AD8827C7E61200EE8F0D /* ContainerVC.swift */,
+			);
+			path = Container;
+			sourceTree = "<group>";
+		};
+		FC22AD8A27C7E6EF00EE8F0D /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				FC22AD8B27C7E70500EE8F0D /* MenuVC.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		FC22AD8D27C7F96E00EE8F0D /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				FC22AD8E27C7F98200EE8F0D /* InfoVC.swift */,
+			);
+			path = Info;
+			sourceTree = "<group>";
+		};
+		FC22AD9027C8B94E00EE8F0D /* Workshop */ = {
+			isa = PBXGroup;
+			children = (
+				FC22AE1027DA775200EE8F0D /* Controllers */,
+				FC22ADFF27DA748F00EE8F0D /* CollectionWorkshop */,
+				FC22AD9127C8B98F00EE8F0D /* WorkshopVC.swift */,
+			);
+			path = Workshop;
+			sourceTree = "<group>";
+		};
+		FC22AD9327C8BD5E00EE8F0D /* Gentlmen */ = {
+			isa = PBXGroup;
+			children = (
+				FC22ADEE27DA6E3000EE8F0D /* CollectionGentelmen */,
+				FC22AD9427C8BD8600EE8F0D /* GentelmenVC.swift */,
+			);
+			path = Gentlmen;
+			sourceTree = "<group>";
+		};
+		FC22AD9627C8BE3F00EE8F0D /* ChestAvto */ = {
+			isa = PBXGroup;
+			children = (
+				FC22ADC627D9FF3500EE8F0D /* CollectiomPhoto */,
+				FC22AD9727C8BE5700EE8F0D /* ChestAvtoVC.swift */,
+				FC22ADDD27DA5AF400EE8F0D /* PhotoTableLayout.swift */,
+			);
+			path = ChestAvto;
+			sourceTree = "<group>";
+		};
+		FC22AD9927D904AA00EE8F0D /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				FC22ADAA27D90A2B00EE8F0D /* ofont.ru_Marutya.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		FC22ADB527D9142000EE8F0D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FC22ADB627D9142E00EE8F0D /* HumanCell.swift */,
+				FC22ADBA27D9160C00EE8F0D /* Human.swift */,
+				FC22ADBE27D916FE00EE8F0D /* HumanManager.swift */,
+				FC22ADC227D91A1D00EE8F0D /* HumanModel.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		FC22ADC627D9FF3500EE8F0D /* CollectiomPhoto */ = {
+			isa = PBXGroup;
+			children = (
+				FC22ADC727D9FF5000EE8F0D /* PhotoCell.swift */,
+				FC22ADD127DA552800EE8F0D /* Photo.swift */,
+				FC22ADD527DA55CF00EE8F0D /* PhotoManager.swift */,
+				FC22ADD927DA565000EE8F0D /* PhotoModel.swift */,
+			);
+			path = CollectiomPhoto;
+			sourceTree = "<group>";
+		};
+		FC22ADCB27DA121900EE8F0D /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				FC22ADCC27DA123300EE8F0D /* CustomNav.swift */,
+				FC22AE1D27DB351D00EE8F0D /* CustomTextField.swift */,
+				FC22AE2127DB593F00EE8F0D /* CustomSegmentedControl.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		FC22ADE127DA5FF200EE8F0D /* Buy */ = {
+			isa = PBXGroup;
+			children = (
+				FC22AE2527DB8EAC00EE8F0D /* CollectionCarsPhoto */,
+				FC22ADE227DA602400EE8F0D /* BuyVC.swift */,
+				FC22ADE627DA6D0B00EE8F0D /* SellVC.swift */,
+				FC22ADEA27DA6D4000EE8F0D /* CommissionVC.swift */,
+			);
+			path = Buy;
+			sourceTree = "<group>";
+		};
+		FC22ADEE27DA6E3000EE8F0D /* CollectionGentelmen */ = {
+			isa = PBXGroup;
+			children = (
+				FC22ADEF27DA6E5C00EE8F0D /* GentlmenCell.swift */,
+				FC22ADF327DA6E7100EE8F0D /* Gentlmen.swift */,
+				FC22ADF727DA6E7D00EE8F0D /* GentlmenManager.swift */,
+				FC22ADFB27DA6E8700EE8F0D /* GentlmenModel.swift */,
+			);
+			path = CollectionGentelmen;
+			sourceTree = "<group>";
+		};
+		FC22ADFF27DA748F00EE8F0D /* CollectionWorkshop */ = {
+			isa = PBXGroup;
+			children = (
+				FC22AE0027DA74B000EE8F0D /* Workshop.swift */,
+				FC22AE0427DA74BA00EE8F0D /* WorkshopCell.swift */,
+				FC22AE0827DA74C400EE8F0D /* WorkshopManager.swift */,
+				FC22AE0C27DA74CE00EE8F0D /* WorkshopModel.swift */,
+			);
+			path = CollectionWorkshop;
+			sourceTree = "<group>";
+		};
+		FC22AE1027DA775200EE8F0D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FC22AE1127DA776B00EE8F0D /* ServiceVC.swift */,
+				FC22AE1527DA777B00EE8F0D /* DetailingVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FC22AE2527DB8EAC00EE8F0D /* CollectionCarsPhoto */ = {
+			isa = PBXGroup;
+			children = (
+				FC22AE2627DB8EC900EE8F0D /* PhotoCarsCell.swift */,
+			);
+			path = CollectionCarsPhoto;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,6 +514,8 @@
 				Base,
 			);
 			mainGroup = FC22AD4527C7D71B00EE8F0D;
+			packageReferences = (
+			);
 			productRefGroup = FC22AD4F27C7D71B00EE8F0D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -232,7 +533,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC22AD5E27C7D71D00EE8F0D /* LaunchScreen.storyboard in Resources */,
-				FC22AD5B27C7D71D00EE8F0D /* Assets.xcassets in Resources */,
+				FC22ADAB27D90A2B00EE8F0D /* ofont.ru_Marutya.ttf in Resources */,
+				FC22AE1A27DA78C800EE8F0D /* Assets.xcassets in Resources */,
 				FC22AD5927C7D71B00EE8F0D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,6 +543,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC22AE1B27DA78C800EE8F0D /* Assets.xcassets in Resources */,
+				FC22ADAC27D90A2B00EE8F0D /* ofont.ru_Marutya.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +552,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC22AE1C27DA78C800EE8F0D /* Assets.xcassets in Resources */,
+				FC22ADAD27D90A2B00EE8F0D /* ofont.ru_Marutya.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +565,42 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC22AD5627C7D71B00EE8F0D /* ViewController.swift in Sources */,
+				FC22ADFC27DA6E8700EE8F0D /* GentlmenModel.swift in Sources */,
+				FC22AE1627DA777B00EE8F0D /* DetailingVC.swift in Sources */,
+				FC22AD9227C8B98F00EE8F0D /* WorkshopVC.swift in Sources */,
+				FC22AD8627C7DEAE00EE8F0D /* HomeVC.swift in Sources */,
 				FC22AD5227C7D71B00EE8F0D /* AppDelegate.swift in Sources */,
+				FC22ADCD27DA123300EE8F0D /* CustomNav.swift in Sources */,
+				FC22ADE327DA602400EE8F0D /* BuyVC.swift in Sources */,
+				FC22AE0927DA74C400EE8F0D /* WorkshopManager.swift in Sources */,
+				FC22ADC827D9FF5000EE8F0D /* PhotoCell.swift in Sources */,
+				FC22ADBB27D9160C00EE8F0D /* Human.swift in Sources */,
 				FC22AD5427C7D71B00EE8F0D /* SceneDelegate.swift in Sources */,
+				FC22ADB727D9142E00EE8F0D /* HumanCell.swift in Sources */,
+				FC22ADB227D912F700EE8F0D /* HomeTableLayout.swift in Sources */,
+				FC22AE1E27DB351D00EE8F0D /* CustomTextField.swift in Sources */,
+				FC22ADC327D91A1D00EE8F0D /* HumanModel.swift in Sources */,
+				FC22AD8F27C7F98200EE8F0D /* InfoVC.swift in Sources */,
+				FC22ADD227DA552800EE8F0D /* Photo.swift in Sources */,
+				FC22AE0127DA74B000EE8F0D /* Workshop.swift in Sources */,
+				FC22AE1227DA776B00EE8F0D /* ServiceVC.swift in Sources */,
+				FC22AE0527DA74BA00EE8F0D /* WorkshopCell.swift in Sources */,
+				FC22AD9827C8BE5700EE8F0D /* ChestAvtoVC.swift in Sources */,
+				FC22ADD627DA55CF00EE8F0D /* PhotoManager.swift in Sources */,
+				FC22AE2227DB593F00EE8F0D /* CustomSegmentedControl.swift in Sources */,
+				FC22AD8927C7E61200EE8F0D /* ContainerVC.swift in Sources */,
+				FC22AE2727DB8EC900EE8F0D /* PhotoCarsCell.swift in Sources */,
+				FC22ADDE27DA5AF400EE8F0D /* PhotoTableLayout.swift in Sources */,
+				FC22ADE727DA6D0B00EE8F0D /* SellVC.swift in Sources */,
+				FC22ADBF27D916FE00EE8F0D /* HumanManager.swift in Sources */,
+				FC22ADF827DA6E7D00EE8F0D /* GentlmenManager.swift in Sources */,
+				FC22AD8C27C7E70500EE8F0D /* MenuVC.swift in Sources */,
+				FC22ADDA27DA565000EE8F0D /* PhotoModel.swift in Sources */,
+				FC22AD9527C8BD8600EE8F0D /* GentelmenVC.swift in Sources */,
+				FC22AE0D27DA74CE00EE8F0D /* WorkshopModel.swift in Sources */,
+				FC22ADF427DA6E7100EE8F0D /* Gentlmen.swift in Sources */,
+				FC22ADEB27DA6D4000EE8F0D /* CommissionVC.swift in Sources */,
+				FC22ADF027DA6E5C00EE8F0D /* GentlmenCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +608,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC22AE1F27DB351D00EE8F0D /* CustomTextField.swift in Sources */,
+				FC22ADC927D9FF5100EE8F0D /* PhotoCell.swift in Sources */,
+				FC22ADDF27DA5AF400EE8F0D /* PhotoTableLayout.swift in Sources */,
+				FC22ADC027D916FE00EE8F0D /* HumanManager.swift in Sources */,
+				FC22ADCE27DA123300EE8F0D /* CustomNav.swift in Sources */,
+				FC22ADFD27DA6E8700EE8F0D /* GentlmenModel.swift in Sources */,
+				FC22ADD327DA552800EE8F0D /* Photo.swift in Sources */,
+				FC22ADEC27DA6D4000EE8F0D /* CommissionVC.swift in Sources */,
 				FC22AD6927C7D71D00EE8F0D /* KPPTests.swift in Sources */,
+				FC22ADBC27D9160C00EE8F0D /* Human.swift in Sources */,
+				FC22ADE427DA602400EE8F0D /* BuyVC.swift in Sources */,
+				FC22AE0627DA74BA00EE8F0D /* WorkshopCell.swift in Sources */,
+				FC22AE0227DA74B000EE8F0D /* Workshop.swift in Sources */,
+				FC22ADE827DA6D0B00EE8F0D /* SellVC.swift in Sources */,
+				FC22ADB327D912F700EE8F0D /* HomeTableLayout.swift in Sources */,
+				FC22ADF927DA6E7D00EE8F0D /* GentlmenManager.swift in Sources */,
+				FC22ADB827D9142E00EE8F0D /* HumanCell.swift in Sources */,
+				FC22AE2827DB8EC900EE8F0D /* PhotoCarsCell.swift in Sources */,
+				FC22ADDB27DA565000EE8F0D /* PhotoModel.swift in Sources */,
+				FC22ADF127DA6E5C00EE8F0D /* GentlmenCell.swift in Sources */,
+				FC22ADF527DA6E7100EE8F0D /* Gentlmen.swift in Sources */,
+				FC22AE0E27DA74CE00EE8F0D /* WorkshopModel.swift in Sources */,
+				FC22AE1327DA776B00EE8F0D /* ServiceVC.swift in Sources */,
+				FC22ADD727DA55CF00EE8F0D /* PhotoManager.swift in Sources */,
+				FC22AE2327DB593F00EE8F0D /* CustomSegmentedControl.swift in Sources */,
+				FC22AE0A27DA74C400EE8F0D /* WorkshopManager.swift in Sources */,
+				FC22AE1727DA777B00EE8F0D /* DetailingVC.swift in Sources */,
+				FC22ADC427D91A1D00EE8F0D /* HumanModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,8 +643,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC22AE0727DA74BA00EE8F0D /* WorkshopCell.swift in Sources */,
 				FC22AD7527C7D71D00EE8F0D /* KPPUITestsLaunchTests.swift in Sources */,
+				FC22ADF627DA6E7100EE8F0D /* Gentlmen.swift in Sources */,
+				FC22ADB927D9142E00EE8F0D /* HumanCell.swift in Sources */,
+				FC22AE1827DA777B00EE8F0D /* DetailingVC.swift in Sources */,
+				FC22ADF227DA6E5C00EE8F0D /* GentlmenCell.swift in Sources */,
+				FC22ADD827DA55CF00EE8F0D /* PhotoManager.swift in Sources */,
+				FC22AE2927DB8EC900EE8F0D /* PhotoCarsCell.swift in Sources */,
+				FC22AE2427DB593F00EE8F0D /* CustomSegmentedControl.swift in Sources */,
 				FC22AD7327C7D71D00EE8F0D /* KPPUITests.swift in Sources */,
+				FC22AE2027DB351D00EE8F0D /* CustomTextField.swift in Sources */,
+				FC22ADBD27D9160C00EE8F0D /* Human.swift in Sources */,
+				FC22ADE527DA602400EE8F0D /* BuyVC.swift in Sources */,
+				FC22ADD427DA552800EE8F0D /* Photo.swift in Sources */,
+				FC22ADED27DA6D4000EE8F0D /* CommissionVC.swift in Sources */,
+				FC22ADDC27DA565000EE8F0D /* PhotoModel.swift in Sources */,
+				FC22AE0F27DA74CE00EE8F0D /* WorkshopModel.swift in Sources */,
+				FC22ADCA27D9FF5100EE8F0D /* PhotoCell.swift in Sources */,
+				FC22ADCF27DA123300EE8F0D /* CustomNav.swift in Sources */,
+				FC22ADE927DA6D0B00EE8F0D /* SellVC.swift in Sources */,
+				FC22ADB427D912F700EE8F0D /* HomeTableLayout.swift in Sources */,
+				FC22AE1427DA776B00EE8F0D /* ServiceVC.swift in Sources */,
+				FC22ADFA27DA6E7D00EE8F0D /* GentlmenManager.swift in Sources */,
+				FC22ADE027DA5AF400EE8F0D /* PhotoTableLayout.swift in Sources */,
+				FC22ADFE27DA6E8700EE8F0D /* GentlmenModel.swift in Sources */,
+				FC22ADC127D916FE00EE8F0D /* HumanManager.swift in Sources */,
+				FC22AE0B27DA74C400EE8F0D /* WorkshopManager.swift in Sources */,
+				FC22AE0327DA74B000EE8F0D /* Workshop.swift in Sources */,
+				FC22ADC527D91A1D00EE8F0D /* HumanModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
