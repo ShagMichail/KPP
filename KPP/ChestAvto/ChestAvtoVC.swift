@@ -234,6 +234,7 @@ class ChestAvtoVC: UIViewController {
         let rootVC = BuyVC()
         rootVC.navBar.navTitle.text = navBar.navTitle.text
         rootVC.navBar.backgroundColor = navBar.backgroundColor
+        rootVC.flag = true
         navigationController?.pushViewController(rootVC, animated: true)
     }
     

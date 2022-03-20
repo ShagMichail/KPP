@@ -234,6 +234,7 @@ class GentelmenVC: UIViewController {
         let rootVC = BuyVC()
         rootVC.navBar.navTitle.text = navBar.navTitle.text
         rootVC.navBar.backgroundColor = navBar.backgroundColor
+        rootVC.flag = false
         navigationController?.pushViewController(rootVC, animated: true)
     }
     

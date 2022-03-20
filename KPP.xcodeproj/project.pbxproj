@@ -109,6 +109,18 @@
 		FC22AE2727DB8EC900EE8F0D /* PhotoCarsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22AE2627DB8EC900EE8F0D /* PhotoCarsCell.swift */; };
 		FC22AE2827DB8EC900EE8F0D /* PhotoCarsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22AE2627DB8EC900EE8F0D /* PhotoCarsCell.swift */; };
 		FC22AE2927DB8EC900EE8F0D /* PhotoCarsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22AE2627DB8EC900EE8F0D /* PhotoCarsCell.swift */; };
+		FC22AE2C27E784AB00EE8F0D /* BuyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22AE2B27E784AB00EE8F0D /* BuyCell.swift */; };
+		FC22AE2D27E784AB00EE8F0D /* BuyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22AE2B27E784AB00EE8F0D /* BuyCell.swift */; };
+		FC22AE2E27E784AB00EE8F0D /* BuyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22AE2B27E784AB00EE8F0D /* BuyCell.swift */; };
+		FC22AE3027E7873900EE8F0D /* BuyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22AE2F27E7873900EE8F0D /* BuyManager.swift */; };
+		FC22AE3127E7873900EE8F0D /* BuyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22AE2F27E7873900EE8F0D /* BuyManager.swift */; };
+		FC22AE3227E7873900EE8F0D /* BuyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22AE2F27E7873900EE8F0D /* BuyManager.swift */; };
+		FC22AE3427E7874700EE8F0D /* BuyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22AE3327E7874700EE8F0D /* BuyModel.swift */; };
+		FC22AE3527E7874700EE8F0D /* BuyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22AE3327E7874700EE8F0D /* BuyModel.swift */; };
+		FC22AE3627E7874700EE8F0D /* BuyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22AE3327E7874700EE8F0D /* BuyModel.swift */; };
+		FC22AE3827E7880B00EE8F0D /* Cars.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22AE3727E7880B00EE8F0D /* Cars.swift */; };
+		FC22AE3927E7880B00EE8F0D /* Cars.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22AE3727E7880B00EE8F0D /* Cars.swift */; };
+		FC22AE3A27E7880B00EE8F0D /* Cars.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22AE3727E7880B00EE8F0D /* Cars.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -177,6 +189,10 @@
 		FC22AE1D27DB351D00EE8F0D /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		FC22AE2127DB593F00EE8F0D /* CustomSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegmentedControl.swift; sourceTree = "<group>"; };
 		FC22AE2627DB8EC900EE8F0D /* PhotoCarsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCarsCell.swift; sourceTree = "<group>"; };
+		FC22AE2B27E784AB00EE8F0D /* BuyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyCell.swift; sourceTree = "<group>"; };
+		FC22AE2F27E7873900EE8F0D /* BuyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyManager.swift; sourceTree = "<group>"; };
+		FC22AE3327E7874700EE8F0D /* BuyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyModel.swift; sourceTree = "<group>"; };
+		FC22AE3727E7880B00EE8F0D /* Cars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cars.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -379,8 +395,8 @@
 		FC22ADE127DA5FF200EE8F0D /* Buy */ = {
 			isa = PBXGroup;
 			children = (
+				FC22AE2A27E7846200EE8F0D /* BuyVC */,
 				FC22AE2527DB8EAC00EE8F0D /* CollectionCarsPhoto */,
-				FC22ADE227DA602400EE8F0D /* BuyVC.swift */,
 				FC22ADE627DA6D0B00EE8F0D /* SellVC.swift */,
 				FC22ADEA27DA6D4000EE8F0D /* CommissionVC.swift */,
 			);
@@ -424,6 +440,18 @@
 				FC22AE2627DB8EC900EE8F0D /* PhotoCarsCell.swift */,
 			);
 			path = CollectionCarsPhoto;
+			sourceTree = "<group>";
+		};
+		FC22AE2A27E7846200EE8F0D /* BuyVC */ = {
+			isa = PBXGroup;
+			children = (
+				FC22ADE227DA602400EE8F0D /* BuyVC.swift */,
+				FC22AE2B27E784AB00EE8F0D /* BuyCell.swift */,
+				FC22AE2F27E7873900EE8F0D /* BuyManager.swift */,
+				FC22AE3327E7874700EE8F0D /* BuyModel.swift */,
+				FC22AE3727E7880B00EE8F0D /* Cars.swift */,
+			);
+			path = BuyVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -565,6 +593,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC22AD5627C7D71B00EE8F0D /* ViewController.swift in Sources */,
+				FC22AE3027E7873900EE8F0D /* BuyManager.swift in Sources */,
 				FC22ADFC27DA6E8700EE8F0D /* GentlmenModel.swift in Sources */,
 				FC22AE1627DA777B00EE8F0D /* DetailingVC.swift in Sources */,
 				FC22AD9227C8B98F00EE8F0D /* WorkshopVC.swift in Sources */,
@@ -581,6 +610,7 @@
 				FC22AE1E27DB351D00EE8F0D /* CustomTextField.swift in Sources */,
 				FC22ADC327D91A1D00EE8F0D /* HumanModel.swift in Sources */,
 				FC22AD8F27C7F98200EE8F0D /* InfoVC.swift in Sources */,
+				FC22AE3427E7874700EE8F0D /* BuyModel.swift in Sources */,
 				FC22ADD227DA552800EE8F0D /* Photo.swift in Sources */,
 				FC22AE0127DA74B000EE8F0D /* Workshop.swift in Sources */,
 				FC22AE1227DA776B00EE8F0D /* ServiceVC.swift in Sources */,
@@ -590,8 +620,10 @@
 				FC22AE2227DB593F00EE8F0D /* CustomSegmentedControl.swift in Sources */,
 				FC22AD8927C7E61200EE8F0D /* ContainerVC.swift in Sources */,
 				FC22AE2727DB8EC900EE8F0D /* PhotoCarsCell.swift in Sources */,
+				FC22AE3827E7880B00EE8F0D /* Cars.swift in Sources */,
 				FC22ADDE27DA5AF400EE8F0D /* PhotoTableLayout.swift in Sources */,
 				FC22ADE727DA6D0B00EE8F0D /* SellVC.swift in Sources */,
+				FC22AE2C27E784AB00EE8F0D /* BuyCell.swift in Sources */,
 				FC22ADBF27D916FE00EE8F0D /* HumanManager.swift in Sources */,
 				FC22ADF827DA6E7D00EE8F0D /* GentlmenManager.swift in Sources */,
 				FC22AD8C27C7E70500EE8F0D /* MenuVC.swift in Sources */,
@@ -617,12 +649,16 @@
 				FC22ADD327DA552800EE8F0D /* Photo.swift in Sources */,
 				FC22ADEC27DA6D4000EE8F0D /* CommissionVC.swift in Sources */,
 				FC22AD6927C7D71D00EE8F0D /* KPPTests.swift in Sources */,
+				FC22AE2D27E784AB00EE8F0D /* BuyCell.swift in Sources */,
+				FC22AE3127E7873900EE8F0D /* BuyManager.swift in Sources */,
 				FC22ADBC27D9160C00EE8F0D /* Human.swift in Sources */,
 				FC22ADE427DA602400EE8F0D /* BuyVC.swift in Sources */,
 				FC22AE0627DA74BA00EE8F0D /* WorkshopCell.swift in Sources */,
+				FC22AE3927E7880B00EE8F0D /* Cars.swift in Sources */,
 				FC22AE0227DA74B000EE8F0D /* Workshop.swift in Sources */,
 				FC22ADE827DA6D0B00EE8F0D /* SellVC.swift in Sources */,
 				FC22ADB327D912F700EE8F0D /* HomeTableLayout.swift in Sources */,
+				FC22AE3527E7874700EE8F0D /* BuyModel.swift in Sources */,
 				FC22ADF927DA6E7D00EE8F0D /* GentlmenManager.swift in Sources */,
 				FC22ADB827D9142E00EE8F0D /* HumanCell.swift in Sources */,
 				FC22AE2827DB8EC900EE8F0D /* PhotoCarsCell.swift in Sources */,
@@ -650,8 +686,10 @@
 				FC22AE1827DA777B00EE8F0D /* DetailingVC.swift in Sources */,
 				FC22ADF227DA6E5C00EE8F0D /* GentlmenCell.swift in Sources */,
 				FC22ADD827DA55CF00EE8F0D /* PhotoManager.swift in Sources */,
+				FC22AE3227E7873900EE8F0D /* BuyManager.swift in Sources */,
 				FC22AE2927DB8EC900EE8F0D /* PhotoCarsCell.swift in Sources */,
 				FC22AE2427DB593F00EE8F0D /* CustomSegmentedControl.swift in Sources */,
+				FC22AE3627E7874700EE8F0D /* BuyModel.swift in Sources */,
 				FC22AD7327C7D71D00EE8F0D /* KPPUITests.swift in Sources */,
 				FC22AE2027DB351D00EE8F0D /* CustomTextField.swift in Sources */,
 				FC22ADBD27D9160C00EE8F0D /* Human.swift in Sources */,
@@ -663,8 +701,10 @@
 				FC22ADCA27D9FF5100EE8F0D /* PhotoCell.swift in Sources */,
 				FC22ADCF27DA123300EE8F0D /* CustomNav.swift in Sources */,
 				FC22ADE927DA6D0B00EE8F0D /* SellVC.swift in Sources */,
+				FC22AE2E27E784AB00EE8F0D /* BuyCell.swift in Sources */,
 				FC22ADB427D912F700EE8F0D /* HomeTableLayout.swift in Sources */,
 				FC22AE1427DA776B00EE8F0D /* ServiceVC.swift in Sources */,
+				FC22AE3A27E7880B00EE8F0D /* Cars.swift in Sources */,
 				FC22ADFA27DA6E7D00EE8F0D /* GentlmenManager.swift in Sources */,
 				FC22ADE027DA5AF400EE8F0D /* PhotoTableLayout.swift in Sources */,
 				FC22ADFE27DA6E8700EE8F0D /* GentlmenModel.swift in Sources */,
