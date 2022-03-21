@@ -29,9 +29,9 @@ class BuyManager: BuyManagerProtocol {
     func loadPhoto() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             let cars = [
-                Cars(image: (UIImage(named: "chests") ?? #imageLiteral(resourceName: "house")), name: "Mazda"),
-                Cars(image: (UIImage(named: "chest") ?? #imageLiteral(resourceName: "VK")), name: "Honda"),
-                Cars(image: (UIImage(named: "chests") ?? #imageLiteral(resourceName: "master")), name: "Mersedes"),
+                Cars(image: (UIImage(named: "chests") ?? #imageLiteral(resourceName: "house")), brand: "Mazda", model: "RX-7", horsepower: "150", year: "1995", fuel: "Бензин", countRegistration: 2, dtp: 1),
+                Cars(image: (UIImage(named: "chest") ?? #imageLiteral(resourceName: "VK")), brand: "Honda", model: "Civic", horsepower: "110", year: "1998", fuel: "Бензин", countRegistration: 2, dtp: 1),
+                Cars(image: (UIImage(named: "chests") ?? #imageLiteral(resourceName: "master")), brand: "Mersedes", model: "E class", horsepower: "184", year: "2017", fuel: "Бензин", countRegistration: 2, dtp: 1),
             ]
             
             self.output?.didReceive(cars)

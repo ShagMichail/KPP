@@ -63,9 +63,10 @@ class ServiceVC: UIViewController {
     
     private let stampTextField: CustomTextField = {
     let tf = CustomTextField(placeholder: "Stamp")
-        tf.returnKeyType = .done
+        //tf.returnKeyType = .done
         tf.textContentType = .addressCity
         tf.keyboardAppearance = .light
+        tf.addDoneCanselToolBar()
         return tf
     }()
     
@@ -79,17 +80,19 @@ class ServiceVC: UIViewController {
     
     private let yearTextField: CustomTextField = {
     let tf = CustomTextField(placeholder: "Year")
-        tf.returnKeyType = .done
+        //tf.returnKeyType = .done
         tf.textContentType = .addressCity
         tf.keyboardAppearance = .light
+        tf.addDoneCanselToolBar()
         return tf
     }()
     
-    private let detailingTextField: CustomTextField = {
+    private let servisTextField: CustomTextField = {
     let tf = CustomTextField(placeholder: "Service")
-        tf.returnKeyType = .done
+        //tf.returnKeyType = .done
         tf.textContentType = .addressCity
         tf.keyboardAppearance = .light
+        tf.addDoneCanselToolBar()
         return tf
     }()
     
@@ -98,6 +101,13 @@ class ServiceVC: UIViewController {
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
+    
+    private let pickerStampView = UIPickerView()
+    private let pickerYearView = UIPickerView()
+    private let pickerServicView = UIPickerView()
+    private let pickerStampDatas = ["Audi", "Mersedes", "Land Rover", "Honda"]
+    private let pickerYearDatas = ["1950","1960","1970","1980","1990","2000","2001","2002","2003","2004","2005","2006","2007","2008","2009","2010","2011","2012","2013","2014","2015","2016","2017","2018","2019","2020","2021","2022"]
+    private let pickerServicDatas = ["Техническое обслуживание", "Проверка подвески", "Замена тормазов", "Электродиагностика"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -122,7 +132,22 @@ class ServiceVC: UIViewController {
         numberTextField.tintColor = navBar.backgroundColor
         emailTextField.tintColor = navBar.backgroundColor
         yearTextField.tintColor = navBar.backgroundColor
-        detailingTextField.tintColor = navBar.backgroundColor
+        servisTextField.tintColor = navBar.backgroundColor
+        
+        pickerStampView.delegate = self
+        pickerStampView.dataSource = self
+        stampTextField.inputView = pickerStampView
+        pickerStampView.tag = 1
+        
+        pickerYearView.delegate = self
+        pickerYearView.dataSource = self
+        yearTextField.inputView = pickerYearView
+        pickerYearView.tag = 2
+        
+        pickerServicView.delegate = self
+        pickerServicView.dataSource = self
+        servisTextField.inputView = pickerServicView
+        pickerServicView.tag = 3
     }
     
     func setupDelegate(){
@@ -132,7 +157,7 @@ class ServiceVC: UIViewController {
         numberTextField.delegate = self
         emailTextField.delegate = self
         yearTextField.delegate = self
-        detailingTextField.delegate = self
+        servisTextField.delegate = self
     }
     
     func setupNavBar(){
@@ -157,7 +182,7 @@ class ServiceVC: UIViewController {
         view.addSubview(emailTextField)
         view.addSubview(stampTextField)
         view.addSubview(modelTextField)
-        view.addSubview(detailingTextField)
+        view.addSubview(servisTextField)
         view.addSubview(buttonSend)
     }
     
@@ -223,11 +248,11 @@ class ServiceVC: UIViewController {
             yearTextField.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
             yearTextField.widthAnchor.constraint(equalToConstant: view.bounds.width/3 - 20),
             
-            detailingTextField.topAnchor.constraint(equalTo: yearTextField.bottomAnchor, constant: 15),
-            detailingTextField.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
-            detailingTextField.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
+            servisTextField.topAnchor.constraint(equalTo: yearTextField.bottomAnchor, constant: 15),
+            servisTextField.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+            servisTextField.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
             
-            numberTextField.topAnchor.constraint(equalTo: detailingTextField.bottomAnchor, constant: 15),
+            numberTextField.topAnchor.constraint(equalTo: servisTextField.bottomAnchor, constant: 15),
             numberTextField.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
             numberTextField.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
             
@@ -256,8 +281,8 @@ class ServiceVC: UIViewController {
         var number = numberTextField.text!
         var model = modelTextField.text!
         var stamp = stampTextField.text!
-        var detailing = detailingTextField.text!
-        if (!name.isEmpty && !email.isEmpty && !model.isEmpty && !number.isEmpty && !stamp.isEmpty && !year.isEmpty) {
+        var servis = servisTextField.text!
+        if (!name.isEmpty && !email.isEmpty && !model.isEmpty && !number.isEmpty && !stamp.isEmpty && !year.isEmpty && !servis.isEmpty) {
             
             fullnameTextField.text = ""
             emailTextField.text = ""
@@ -265,12 +290,30 @@ class ServiceVC: UIViewController {
             numberTextField.text = ""
             modelTextField.text = ""
             stampTextField.text = ""
-            detailingTextField.text = ""
+            servisTextField.text = ""
             
-        }
-    }
+        let alert = UIAlertController(title: "До связи!", message: "Ваша заявка успешно отправлена! Мы с вами свяжемся по указанным данным.", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ок", style: .cancel, handler: { action
+            in
+            self.navigationController?.popToRootViewController(animated: true)
 
+        } ))
+        present(alert, animated: true)
+        
+        } else {
+            let alert = UIAlertController(title: "Предупреждение", message: "Проверьте заполнение формы. Не все поля заполнены или заполнены неверно!", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Ок", style: .cancel, handler: { action
+                in
+                print("Отмена")
+
+            } ))
+            present(alert, animated: true)
+
+        }
+    
+    }
 }
+
 
 
 extension ServiceVC: UITextFieldDelegate {
@@ -281,7 +324,7 @@ extension ServiceVC: UITextFieldDelegate {
         numberTextField.resignFirstResponder()
         stampTextField.resignFirstResponder()
         emailTextField.resignFirstResponder()
-        detailingTextField.resignFirstResponder()
+        servisTextField.resignFirstResponder()
         return true
     }
     
@@ -347,3 +390,52 @@ extension ServiceVC {
     }
 }
 
+extension ServiceVC: UIPickerViewDelegate, UIPickerViewDataSource {
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+
+
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        switch pickerView.tag {
+        case 1:
+            return pickerStampDatas[row]
+        case 2:
+            return pickerYearDatas[row]
+        case 3:
+            return pickerServicDatas[row]
+        default:
+            return ""
+        }
+        
+    }
+
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        switch pickerView.tag {
+        case 1:
+            return pickerStampDatas.count
+        case 2:
+            return pickerYearDatas.count
+        case 3:
+            return pickerServicDatas.count
+        default:
+            return 1
+        }
+    }
+
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        switch pickerView.tag {
+        case 1:
+            stampTextField.text = pickerStampDatas[row]
+        case 2:
+            yearTextField.text = pickerYearDatas[row]
+        case 3:
+            servisTextField.text = pickerServicDatas[row]
+        default:
+            return yearTextField.text = ""
+        }
+        
+    }
+
+
+}

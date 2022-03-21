@@ -63,9 +63,10 @@ class DetailingVC: UIViewController {
     
     private let stampTextField: CustomTextField = {
     let tf = CustomTextField(placeholder: "Stamp")
-        tf.returnKeyType = .done
+        //tf.returnKeyType = .done
         tf.textContentType = .addressCity
         tf.keyboardAppearance = .light
+        tf.addDoneCanselToolBar()
         return tf
     }()
     
@@ -79,17 +80,19 @@ class DetailingVC: UIViewController {
     
     private let yearTextField: CustomTextField = {
     let tf = CustomTextField(placeholder: "Year")
-        tf.returnKeyType = .done
+        //tf.returnKeyType = .done
         tf.textContentType = .addressCity
         tf.keyboardAppearance = .light
+        tf.addDoneCanselToolBar()
         return tf
     }()
     
     private let detailingTextField: CustomTextField = {
     let tf = CustomTextField(placeholder: "Detailing")
-        tf.returnKeyType = .done
+        //tf.returnKeyType = .done
         tf.textContentType = .addressCity
         tf.keyboardAppearance = .light
+        tf.addDoneCanselToolBar()
         return tf
     }()
     
@@ -98,6 +101,13 @@ class DetailingVC: UIViewController {
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
+    
+    private let pickerStampView = UIPickerView()
+    private let pickerYearView = UIPickerView()
+    private let pickerDetailingView = UIPickerView()
+    private let pickerStampDatas = ["Audi", "Mersedes", "Land Rover", "Honda"]
+    private let pickerYearDatas = ["1950","1960","1970","1980","1990","2000","2001","2002","2003","2004","2005","2006","2007","2008","2009","2010","2011","2012","2013","2014","2015","2016","2017","2018","2019","2020","2021","2022"]
+    private let pickerDetailingDatas = ["Нанесение керамики", "Освежить салон", "Шумоизоляция", "Обклеить пленкой"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -118,10 +128,27 @@ class DetailingVC: UIViewController {
         emailTextField.tintColor = navBar.backgroundColor
         yearTextField.tintColor = navBar.backgroundColor
         detailingTextField.tintColor = navBar.backgroundColor
+        
     }
     
     private func setupElement(){
         view.backgroundColor = .systemBackground
+        
+        pickerStampView.delegate = self
+        pickerStampView.dataSource = self
+        stampTextField.inputView = pickerStampView
+        pickerStampView.tag = 1
+        
+        pickerYearView.delegate = self
+        pickerYearView.dataSource = self
+        yearTextField.inputView = pickerYearView
+        pickerYearView.tag = 2
+        
+        pickerDetailingView.delegate = self
+        pickerDetailingView.dataSource = self
+        detailingTextField.inputView = pickerDetailingView
+        pickerDetailingView.tag = 3
+        
     }
     
     func setupDelegate(){
@@ -266,7 +293,26 @@ class DetailingVC: UIViewController {
             stampTextField.text = ""
             detailingTextField.text = ""
             
+            
+        let alert = UIAlertController(title: "До связи!", message: "Ваша заявка успешно отправлена! Мы с вами свяжемся по указанным данным.", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ок", style: .cancel, handler: { action
+            in
+            self.navigationController?.popToRootViewController(animated: true)
+
+        } ))
+        present(alert, animated: true)
+        
+        } else {
+            let alert = UIAlertController(title: "Предупреждение", message: "Проверьте заполнение формы. Не все поля заполнены или заполнены неверно!", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Ок", style: .cancel, handler: { action
+                in
+                print("Отмена")
+
+            } ))
+            present(alert, animated: true)
+
         }
+    
     }
 
 }
@@ -346,3 +392,52 @@ extension DetailingVC {
     }
 }
 
+extension DetailingVC: UIPickerViewDelegate, UIPickerViewDataSource {
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+
+
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        switch pickerView.tag {
+        case 1:
+            return pickerStampDatas[row]
+        case 2:
+            return pickerYearDatas[row]
+        case 3:
+            return pickerDetailingDatas[row]
+        default:
+            return ""
+        }
+        
+    }
+
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        switch pickerView.tag {
+        case 1:
+            return pickerStampDatas.count
+        case 2:
+            return pickerYearDatas.count
+        case 3:
+            return pickerDetailingDatas.count
+        default:
+            return 1
+        }
+    }
+
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        switch pickerView.tag {
+        case 1:
+            stampTextField.text = pickerStampDatas[row]
+        case 2:
+            yearTextField.text = pickerYearDatas[row]
+        case 3:
+            detailingTextField.text = pickerDetailingDatas[row]
+        default:
+            return yearTextField.text = ""
+        }
+        
+    }
+
+
+}

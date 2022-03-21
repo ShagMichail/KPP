@@ -9,5 +9,11 @@ import UIKit
 
 struct Cars{
     let image: UIImage
-    let name: String
+    let brand: String
+    let model: String
+    let horsepower: String
+    let year: String
+    let fuel: String
+    let countRegistration: Int
+    let dtp: Int
 }

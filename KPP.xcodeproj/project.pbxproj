@@ -121,6 +121,9 @@
 		FC22AE3827E7880B00EE8F0D /* Cars.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22AE3727E7880B00EE8F0D /* Cars.swift */; };
 		FC22AE3927E7880B00EE8F0D /* Cars.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22AE3727E7880B00EE8F0D /* Cars.swift */; };
 		FC22AE3A27E7880B00EE8F0D /* Cars.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22AE3727E7880B00EE8F0D /* Cars.swift */; };
+		FC22AE3C27E8960400EE8F0D /* CustomPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22AE3B27E8960400EE8F0D /* CustomPicker.swift */; };
+		FC22AE3D27E8960400EE8F0D /* CustomPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22AE3B27E8960400EE8F0D /* CustomPicker.swift */; };
+		FC22AE3E27E8960400EE8F0D /* CustomPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22AE3B27E8960400EE8F0D /* CustomPicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -193,6 +196,7 @@
 		FC22AE2F27E7873900EE8F0D /* BuyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyManager.swift; sourceTree = "<group>"; };
 		FC22AE3327E7874700EE8F0D /* BuyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyModel.swift; sourceTree = "<group>"; };
 		FC22AE3727E7880B00EE8F0D /* Cars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cars.swift; sourceTree = "<group>"; };
+		FC22AE3B27E8960400EE8F0D /* CustomPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -388,6 +392,7 @@
 				FC22ADCC27DA123300EE8F0D /* CustomNav.swift */,
 				FC22AE1D27DB351D00EE8F0D /* CustomTextField.swift */,
 				FC22AE2127DB593F00EE8F0D /* CustomSegmentedControl.swift */,
+				FC22AE3B27E8960400EE8F0D /* CustomPicker.swift */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -600,6 +605,7 @@
 				FC22AD8627C7DEAE00EE8F0D /* HomeVC.swift in Sources */,
 				FC22AD5227C7D71B00EE8F0D /* AppDelegate.swift in Sources */,
 				FC22ADCD27DA123300EE8F0D /* CustomNav.swift in Sources */,
+				FC22AE3C27E8960400EE8F0D /* CustomPicker.swift in Sources */,
 				FC22ADE327DA602400EE8F0D /* BuyVC.swift in Sources */,
 				FC22AE0927DA74C400EE8F0D /* WorkshopManager.swift in Sources */,
 				FC22ADC827D9FF5000EE8F0D /* PhotoCell.swift in Sources */,
@@ -648,6 +654,7 @@
 				FC22ADFD27DA6E8700EE8F0D /* GentlmenModel.swift in Sources */,
 				FC22ADD327DA552800EE8F0D /* Photo.swift in Sources */,
 				FC22ADEC27DA6D4000EE8F0D /* CommissionVC.swift in Sources */,
+				FC22AE3D27E8960400EE8F0D /* CustomPicker.swift in Sources */,
 				FC22AD6927C7D71D00EE8F0D /* KPPTests.swift in Sources */,
 				FC22AE2D27E784AB00EE8F0D /* BuyCell.swift in Sources */,
 				FC22AE3127E7873900EE8F0D /* BuyManager.swift in Sources */,
@@ -681,6 +688,7 @@
 			files = (
 				FC22AE0727DA74BA00EE8F0D /* WorkshopCell.swift in Sources */,
 				FC22AD7527C7D71D00EE8F0D /* KPPUITestsLaunchTests.swift in Sources */,
+				FC22AE3E27E8960400EE8F0D /* CustomPicker.swift in Sources */,
 				FC22ADF627DA6E7100EE8F0D /* Gentlmen.swift in Sources */,
 				FC22ADB927D9142E00EE8F0D /* HumanCell.swift in Sources */,
 				FC22AE1827DA777B00EE8F0D /* DetailingVC.swift in Sources */,
