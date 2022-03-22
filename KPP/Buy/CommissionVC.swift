@@ -120,8 +120,7 @@ class CommissionVC: UIViewController {
     
     private let costTextField: CustomTextField = {
     let tf = CustomTextField(placeholder: "Cost")
-        tf.returnKeyType = .done
-        //tf.textContentType = .addressCity
+        tf.addDoneCanselToolBar()
         tf.keyboardAppearance = .light
         tf.keyboardType = .numberPad
         return tf

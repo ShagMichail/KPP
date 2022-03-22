@@ -108,8 +108,7 @@ class SellVC: UIViewController {
     
     private let costTextField: CustomTextField = {
     let tf = CustomTextField(placeholder: "Cost")
-        tf.returnKeyType = .done
-        //tf.textContentType = .addressCity
+        tf.addDoneCanselToolBar()
         tf.keyboardAppearance = .light
         tf.keyboardType = .numberPad
         return tf
@@ -373,7 +372,7 @@ class SellVC: UIViewController {
             stampTextField.text = ""
             costTextField.text = ""
             for i in 0...(images.count - 1) {
-                images.remove(at: i)
+                images.remove(at: 0)
             }
             collectionPhoto.reloadData()
             let alert = UIAlertController(title: "До связи!", message: "Ваша заявка успешно отправлена! Мы с вами свяжемся по указанным данным.", preferredStyle: .alert)
