@@ -124,6 +124,7 @@
 		FC22AE3C27E8960400EE8F0D /* CustomPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22AE3B27E8960400EE8F0D /* CustomPicker.swift */; };
 		FC22AE3D27E8960400EE8F0D /* CustomPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22AE3B27E8960400EE8F0D /* CustomPicker.swift */; };
 		FC22AE3E27E8960400EE8F0D /* CustomPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22AE3B27E8960400EE8F0D /* CustomPicker.swift */; };
+		FC42857D27EB52BB000A3B0E /* CarCardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC42857C27EB52BB000A3B0E /* CarCardVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -197,6 +198,7 @@
 		FC22AE3327E7874700EE8F0D /* BuyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyModel.swift; sourceTree = "<group>"; };
 		FC22AE3727E7880B00EE8F0D /* Cars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cars.swift; sourceTree = "<group>"; };
 		FC22AE3B27E8960400EE8F0D /* CustomPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPicker.swift; sourceTree = "<group>"; };
+		FC42857C27EB52BB000A3B0E /* CarCardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCardVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -400,6 +402,7 @@
 		FC22ADE127DA5FF200EE8F0D /* Buy */ = {
 			isa = PBXGroup;
 			children = (
+				FC42857B27EB5278000A3B0E /* CarCard */,
 				FC22AE2A27E7846200EE8F0D /* BuyVC */,
 				FC22AE2527DB8EAC00EE8F0D /* CollectionCarsPhoto */,
 				FC22ADE627DA6D0B00EE8F0D /* SellVC.swift */,
@@ -457,6 +460,14 @@
 				FC22AE3727E7880B00EE8F0D /* Cars.swift */,
 			);
 			path = BuyVC;
+			sourceTree = "<group>";
+		};
+		FC42857B27EB5278000A3B0E /* CarCard */ = {
+			isa = PBXGroup;
+			children = (
+				FC42857C27EB52BB000A3B0E /* CarCardVC.swift */,
+			);
+			path = CarCard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -629,6 +640,7 @@
 				FC22AE3827E7880B00EE8F0D /* Cars.swift in Sources */,
 				FC22ADDE27DA5AF400EE8F0D /* PhotoTableLayout.swift in Sources */,
 				FC22ADE727DA6D0B00EE8F0D /* SellVC.swift in Sources */,
+				FC42857D27EB52BB000A3B0E /* CarCardVC.swift in Sources */,
 				FC22AE2C27E784AB00EE8F0D /* BuyCell.swift in Sources */,
 				FC22ADBF27D916FE00EE8F0D /* HumanManager.swift in Sources */,
 				FC22ADF827DA6E7D00EE8F0D /* GentlmenManager.swift in Sources */,

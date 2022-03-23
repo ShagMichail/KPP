@@ -15,5 +15,21 @@ struct Cars{
     let year: String
     let fuel: String
     let countRegistration: Int
-    let dtp: Int
+    let dtp: String
+    //let year: String
+    let generation: String
+    let mileage: String
+    //let owner: String
+    //let condition: String
+    //let modification: String
+    let engineCapacity: String
+    //let enginesType: String
+    let transmission: String
+    let driveUnit: String
+    let equipment: String
+    let bodyType: String
+    let color : String
+    let steeringWheel: String
+    let cost: String
+    let costLast: String
 }

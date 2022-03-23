@@ -148,15 +148,15 @@ extension BuyVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         tableView.deselectRow(at: indexPath, animated: true)
-//        let product = products[indexPath.row]
-//        guard let cell = tableView.cellForRow(at: indexPath) as? ProductCell else { return }
-//        let imageCell = cell.getImage()
-//        let viewController = ProductViewController()
-//        let navigationController = UINavigationController(rootViewController: viewController)
-//        viewController.product = product
-//        viewController.delegate = self
-//        viewController.productImageView.image = imageCell
-//        present(navigationController, animated: true, completion: nil)
+        let car = datasource[indexPath.row]
+        guard let cell = tableView.cellForRow(at: indexPath) as? BuyCell else { return }
+        let imageCell = cell.getImage()
+        let rootVC = CarCardVC()
+        rootVC.navBar.navTitle.text = navBar.navTitle.text
+        rootVC.navBar.backgroundColor = navBar.backgroundColor
+        rootVC.carImageView.image = imageCell
+        rootVC.configure(with: car)
+        navigationController?.pushViewController(rootVC, animated: true)
     }
 }
     

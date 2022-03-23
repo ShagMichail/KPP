@@ -21,7 +21,7 @@ class CustomTextField: UITextField {
         
         borderStyle = .roundedRect
         
-        textColor = UIColor.black.withAlphaComponent(0.6)
+        textColor = UIColor.black //.withAlphaComponent(0.6)
         keyboardAppearance = .dark
         //backgroundColor = UIColor.green.withAlphaComponent(0.5)
         setHeight(height: 35)

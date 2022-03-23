@@ -29,9 +29,9 @@ class BuyManager: BuyManagerProtocol {
     func loadPhoto() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             let cars = [
-                Cars(image: (UIImage(named: "chests") ?? #imageLiteral(resourceName: "house")), brand: "Mazda", model: "RX-7", horsepower: "150", year: "1995", fuel: "Бензин", countRegistration: 2, dtp: 1),
-                Cars(image: (UIImage(named: "chest") ?? #imageLiteral(resourceName: "VK")), brand: "Honda", model: "Civic", horsepower: "110", year: "1998", fuel: "Бензин", countRegistration: 2, dtp: 1),
-                Cars(image: (UIImage(named: "chests") ?? #imageLiteral(resourceName: "master")), brand: "Mersedes", model: "E class", horsepower: "184", year: "2017", fuel: "Бензин", countRegistration: 2, dtp: 1),
+                Cars(image: (UIImage(named: "chests") ?? #imageLiteral(resourceName: "house")), brand: "Mazda", model: "RX-7", horsepower: "150", year: "1995", fuel: "Бензин", countRegistration: 2, dtp: "Битый (2)", generation: "1(2008-2010)", mileage: "183.000", engineCapacity: "2.4", transmission: "Автомат", driveUnit: "Передний", equipment: "Люкс", bodyType: "Седан", color: "Черный", steeringWheel: "Левый", cost: "436.900", costLast: "450.000"),
+                Cars(image: (UIImage(named: "chests") ?? #imageLiteral(resourceName: "house")), brand: "Mazda", model: "RX-7", horsepower: "150", year: "1995", fuel: "Бензин", countRegistration: 2, dtp: "Битый (1)", generation: "1(2008-2010)", mileage: "183.000", engineCapacity: "2.4", transmission: "Автомат", driveUnit: "Передний", equipment: "Люкс", bodyType: "Седан", color: "Черный", steeringWheel: "Левый", cost: "436.900", costLast: ""),
+                Cars(image: (UIImage(named: "chests") ?? #imageLiteral(resourceName: "house")), brand: "Mazda", model: "RX-7", horsepower: "150", year: "1995", fuel: "Бензин", countRegistration: 2, dtp: "Не битый", generation: "1(2008-2010)", mileage: "183.000", engineCapacity: "2.4", transmission: "Автомат", driveUnit: "Передний", equipment: "Люкс", bodyType: "Седан", color: "Черный", steeringWheel: "Левый", cost: "436.900", costLast: "350.000"),
             ]
             
             self.output?.didReceive(cars)

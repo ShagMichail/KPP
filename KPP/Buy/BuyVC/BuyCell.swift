@@ -87,9 +87,9 @@ class BuyCell: UITableViewCell {
 //        return imageProd
 //    }
 //
-//    public func getImage() -> UIImage? {
-//        return imageProd.image
-//    }
+    public func getImage() -> UIImage? {
+        return imageCars.image
+    }
   
     func configure(with data: Cars){
         nameCars.text = data.brand
@@ -99,7 +99,8 @@ class BuyCell: UITableViewCell {
         yearCars.text = data.year + " год"
         //fuelCars.text = data.fuel
         countRegistration.text = String(data.countRegistration)
-        countDTP.text = String(data.dtp)
+        countDTP.text = data.dtp
+        
     }
     
     override func layoutSubviews() {
@@ -191,7 +192,7 @@ extension BuyCell {
             imageDTP.heightAnchor.constraint(equalToConstant: 25),
             imageDTP.widthAnchor.constraint(equalToConstant: 25),
             
-            countDTP.topAnchor.constraint(equalTo: imageCarsLabel.bottomAnchor, constant: 7),
+            countDTP.topAnchor.constraint(equalTo: imageCarsLabel.bottomAnchor, constant: 15),
             countDTP.leadingAnchor.constraint(equalTo: imageDTP.trailingAnchor, constant: 10),
             
             
@@ -200,7 +201,7 @@ extension BuyCell {
             imageRegistration.heightAnchor.constraint(equalToConstant: 25),
             imageRegistration.widthAnchor.constraint(equalToConstant: 25),
             
-            countRegistration.topAnchor.constraint(equalTo: imageDTP.bottomAnchor, constant: 10),
+            countRegistration.topAnchor.constraint(equalTo: imageDTP.bottomAnchor, constant: 15),
             countRegistration.leadingAnchor.constraint(equalTo: imageRegistration.trailingAnchor, constant: 7),
             
        ])
