@@ -32,4 +32,5 @@ struct Cars{
     let steeringWheel: String
     let cost: String
     let costLast: String
+    let deposit: Bool
 }

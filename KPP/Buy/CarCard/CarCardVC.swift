@@ -21,6 +21,7 @@ class CarCardVC: UIViewController {
     //var auto = Cars(image: UIImage(), brand: String(), model: String(), horsepower: String(), year: String(), fuel: String(), countRegistration: Int(), dtp: Int(), generation: String(), mileage: String(), engineCapacity: String(), transmission: String(), driveUnit: String(), equipment: String(), bodyType: String(), color: String(), steeringWheel: String(), cost: String())
     
     private var costFlag = Bool()
+    private var depositFlag = Bool()
     
     private let viewColor = UIView()
     private let viewCar = UIView()
@@ -67,18 +68,19 @@ class CarCardVC: UIViewController {
     private let question = UILabel()
     private let buttonCall: UIButton = {
         let button = UIButton(type: .system)
-        let atts: [NSAttributedString.Key: Any] = [.foregroundColor: UIColor.white, .font: UIFont.systemFont(ofSize: 15)]
-        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 30)
-        let attriburedTitle = NSMutableAttributedString(string: "Позвонить",
-                                                        attributes: atts)
-        button.setAttributedTitle(attriburedTitle, for: .normal)
-        
-        button.layer.cornerRadius = 15
+    
+        button.layer.cornerRadius = 5
         button.titleLabel?.font = .systemFont(ofSize: 30, weight: .regular)
         button.translatesAutoresizingMaskIntoConstraints = false
         
         return button
     }()
+    
+    private let viewDeposit = UIView()
+    private let viewDepositLabel = UIView()
+    private let labelDeposit = UILabel()
+    
+    private let viewAnimation = ViewController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -112,6 +114,7 @@ class CarCardVC: UIViewController {
         brandCars.text = data.brand
         modelCars.text = data.model
         costLastCars.text = data.costLast
+        depositFlag = data.deposit
         
         if costLastCars.text != "" {
             costFlag = true
@@ -136,7 +139,7 @@ class CarCardVC: UIViewController {
         viewCar.addSubview(costCars)
         viewCar.addSubview(cost)
         viewCar.addSubview(costLastCars)
-
+        
         view.addSubview(carsCharacteristics)
         contentView.addSubview(year)
         contentView.addSubview(generation)
@@ -278,6 +281,18 @@ class CarCardVC: UIViewController {
         
         buttonCall.addTarget(self, action: #selector(sendButton), for: .touchUpInside)
         
+        viewDeposit.translatesAutoresizingMaskIntoConstraints = false
+        viewDeposit.backgroundColor = UIColor.systemGreen
+        viewDeposit.layer.cornerRadius = 10
+        
+        viewDepositLabel.translatesAutoresizingMaskIntoConstraints = false
+        viewDepositLabel.backgroundColor = UIColor.white
+        viewDepositLabel.alpha = 0.5
+        viewDepositLabel.layer.cornerRadius = 10
+        
+        labelDeposit.translatesAutoresizingMaskIntoConstraints = false
+        labelDeposit.text = "Под задатком!"
+        labelDeposit.textAlignment = .center
         
         
         if costFlag {
@@ -305,6 +320,47 @@ class CarCardVC: UIViewController {
                 costCars.topAnchor.constraint(equalTo: brandCars.bottomAnchor, constant: 7),
                 costCars.leadingAnchor.constraint(equalTo: cost.trailingAnchor, constant: 3),
             ])
+        }
+        
+        let atts: [NSAttributedString.Key: Any] = [.foregroundColor: UIColor.white, .font: UIFont.systemFont(ofSize: 15)]
+        buttonCall.titleLabel?.font = UIFont.boldSystemFont(ofSize: 30)
+        
+        if depositFlag {
+            
+            
+            view.addSubview(viewDeposit)
+            viewDeposit.addSubview(viewDepositLabel)
+            viewDepositLabel.addSubview(labelDeposit)
+
+            let attriburedTitle = NSMutableAttributedString(string: "Под задатком",
+                                                            attributes: atts)
+            buttonCall.setAttributedTitle(attriburedTitle, for: .normal)
+            
+            buttonCall.isEnabled = false
+            
+            NSLayoutConstraint.activate([
+                
+                viewDeposit.bottomAnchor.constraint(equalTo: carImageView.bottomAnchor, constant: -10),
+                viewDeposit.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: UIScreen.main.bounds.width/5),
+                viewDeposit.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -(UIScreen.main.bounds.width/5)),
+                viewDeposit.heightAnchor.constraint(equalToConstant: 45),
+                
+                viewDepositLabel.topAnchor.constraint(equalTo: viewDeposit.topAnchor, constant: 7),
+                viewDepositLabel.leadingAnchor.constraint(equalTo: viewDeposit.leadingAnchor, constant: 7),
+                viewDepositLabel.trailingAnchor.constraint(equalTo: viewDeposit.trailingAnchor, constant: -7),
+                viewDepositLabel.bottomAnchor.constraint(equalTo: viewDeposit.bottomAnchor, constant: -7),
+                
+                labelDeposit.topAnchor.constraint(equalTo: viewDepositLabel.topAnchor, constant: 7),
+                labelDeposit.leadingAnchor.constraint(equalTo: viewDepositLabel.leadingAnchor, constant: 7),
+                labelDeposit.trailingAnchor.constraint(equalTo: viewDepositLabel.trailingAnchor, constant: -7),
+                labelDeposit.bottomAnchor.constraint(equalTo: viewDepositLabel.bottomAnchor, constant: -7),
+
+            ])
+        } else {
+            let attriburedTitle = NSMutableAttributedString(string: "Позвонить",
+                                                            attributes: atts)
+            buttonCall.setAttributedTitle(attriburedTitle, for: .normal)
+            buttonCall.isEnabled = true
         }
         
         brandCars.translatesAutoresizingMaskIntoConstraints = false
@@ -445,8 +501,8 @@ class CarCardVC: UIViewController {
             question.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
             
             buttonCall.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -25),
-            buttonCall.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: UIScreen.main.bounds.width / 4),
-            buttonCall.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -(UIScreen.main.bounds.width / 4)),
+            buttonCall.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 30),
+            buttonCall.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -30),
             buttonCall.heightAnchor.constraint(equalToConstant: 35),
             
             ])
@@ -457,9 +513,13 @@ class CarCardVC: UIViewController {
     }
     
     @objc func sendButton(){
-        let url: NSURL = URL(string: "TEL://89096833671") as! NSURL
-        UIApplication.shared.open(url as URL, options: [:], completionHandler: nil)
-        print("ghg")
+        if navBar.backgroundColor == UIColor.purple {
+            let url: NSURL = URL(string: "TEL://+79660209462") as! NSURL
+            UIApplication.shared.open(url as URL, options: [:], completionHandler: nil)
+        } else {
+            let url: NSURL = URL(string: "TEL://+79166718071") as! NSURL
+            UIApplication.shared.open(url as URL, options: [:], completionHandler: nil)
+        }
     }
 
 
